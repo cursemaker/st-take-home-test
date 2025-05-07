@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useState } from 'react';
 interface IButton {
   name: string;
@@ -17,7 +16,7 @@ export default function Home() {
   ];
   const arrayAsString = JSON.stringify(source);
   const doubleValue = source.filter((array) => array[0] === array[1]);
-  
+
   const [display,setDisplay] = useState<number[][]>(source);
 
   const buttons = [
